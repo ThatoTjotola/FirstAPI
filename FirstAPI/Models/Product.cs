@@ -5,15 +5,15 @@ namespace FirstAPI.Models
 {
     public class Product
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
+        
+        public string TeamName { get; set; } = string.Empty;
         [Required]
-        public string Sku { get; set; } = string.Empty;
+        public string DriverName { get; set; } = string.Empty;
         [Required]
-        public string Name { get; set; } = string.Empty;
-        [Required]
-        public string Description { get; set; } = string.Empty;
-        public decimal Price { get; set; }
-        public bool IsAvailable { get; set; }
+        public string CarDescription { get; set; } = string.Empty;
+        public string FastestTime { get; set; }
+        public bool Contractvalid { get; set; }
 
         [Required]
         public int CategoryId { get; set; }
